@@ -1,0 +1,146 @@
+/*
+
+    Name: Jacques Favre
+    Date: Jan 17 2017
+    Class: CGS1821.051
+    Assignment: Week 2
+    Language: CSS 3
+    Purpose: Exercise 1
+    Includes: CSS style sheet
+	Responsive web design custom web page
+	
+	color: #dce2ea;  light blue on sides and accent on table
+	color: #eff2f5;  lighter blue background
+	color: #282828;  almost black 
+*/
+
+
+/* reset selector */
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+/* the styles for the elements */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+  	width: 99%;
+	max-width: 960px;
+	margin: 0 auto; /* margin top and bottom 0, and automatic on side*/
+	background-color: #eff2f5;  /* to make all light blue*/
+	}
+	
+/* to make sides light grey*/
+html {
+	background-color: #dce2ea;  
+	}
+
+/* the styles for the header*/
+header {
+	margin-top: 5px;
+	background-color: #282828;
+	}
+	
+/* the styles for the main area, 90% to have a margin on all small screens and all elements aligned*/	
+	main {
+	clear: left;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*the style for the h1 within the header, */
+	header h1 {
+		font-size: 400%;
+		color: #eff2f5; /*light blue, same as body*/
+		padding: .5em .75em;
+	}
+	
+	
+/* the styles for the image, float to the right*/
+	img {
+		float: right;
+		margin: 1em 0 1.5em 1.5em;
+	}	
+	
+/* the styles for the h1*/	 
+	main h1 {
+		margin: 2em 0 1.5em 0;
+	}	
+	
+/* the styles for the h1*/	  
+	main h3 {
+	margin: 1.5em 0 1.5em 0;
+	}	
+	
+/* the styles for the h2, clear to always be below picture */	 
+	main h2 {
+		clear: right;
+	 	margin: 1.5em 0 1.5em 0;
+	}	
+		
+/* the styles for the p elements*/	 		
+	 main p {
+ 	margin: 1.5em 0 1.5em 0;
+	}	
+
+ /* prevent cells from collapsing,since a slider will allow to scroll*/	
+	table {
+	white-space: nowrap;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	}
+	
+/* the styles for the cells*/	 	
+	th, td {
+	padding: .3em 1.43em .3em 1.43em;
+	}
+
+/*alternate darker lines in table*/	 	
+	tbody tr:nth-child(odd) {
+	background-color: #dce2ea; 	
+	}
+
+/*change fontcolor in header cells*/	 	
+	thead {
+	color: gray; 
+	}
+	
+/* the styles for the footer, bigger and centered*/	 	
+	tfoot { 
+	font-size: 110%;
+	text-align: center;
+	}
+	
+/* the style for the text in footer*/
+footer p {
+	text-align: center;
+	color: #eff2f5;
+	padding: 1em 0;
+	background-color: #282828;
+}
+
+/* the style for the footer*/
+footer {
+	border-radius: 10px;
+	background-color: #282828;  /* to make footer almost black */
+	margin-top: 1em;
+	margin-bottom : 5px;
+	clear: right;
+
+}
+
+
+
+/* Media Query for smaller screens*/
+
+
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	
+/* Shrink images on small screen*/
+	img { width: 45%; }
+}
+
+/*no more Media Querry, it is a simple page*/
